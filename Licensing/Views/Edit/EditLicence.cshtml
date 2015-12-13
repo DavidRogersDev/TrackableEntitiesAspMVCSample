@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "EditLicence";
+}
+<div ng-controller="editLicencesCtrl">
+    <h2>Edit Licence</h2>
+
+    <form ng-submit="postLicenceFormSubmit()">
+        <div class="form-group">
+            <label class="control-label" for="Id">Licence Id:</label>
+            <input class="form-control" name="Id" type="text" ng-model="data.id" />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="LicenceKey">Licence Key:</label>
+            <input class="form-control" name="LicenceKey" type="text" ng-model="data.licenceKey" ng-change="flagModelAsChanged()" />
+            <input class="form-control" name="TrackingState" type="hidden" ng-model="data.trackingState" ng-value="data.trackingState" />
+        </div>
+
+        @*<div ng-repeat="(i,allocation) in data.licenceAllocations">
+            <input class="form-control" name="LicenceAllocations[i].PersonId" type="text" ng-model="allocation.personId" />
+        </div>*@
+
+        <input type="submit" value="click" class="btn btn-default" />
+    </form>
+            
+</div>
+
+

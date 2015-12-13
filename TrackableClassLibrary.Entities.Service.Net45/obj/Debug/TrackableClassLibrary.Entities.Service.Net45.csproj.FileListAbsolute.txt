@@ -1,0 +1,16 @@
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\TrackableClassLibrary.Entities.Service.Net45.dll.config
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\TrackableClassLibrary.Entities.Service.Net45.dll
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\TrackableClassLibrary.Entities.Service.Net45.pdb
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\EntityFramework.dll
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\EntityFramework.SqlServer.dll
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\Newtonsoft.Json.dll
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\TrackableEntities.Common.dll
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\TrackableEntities.EF.6.dll
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\EntityFramework.xml
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\EntityFramework.SqlServer.xml
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\Newtonsoft.Json.xml
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\TrackableEntities.Common.xml
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\bin\Debug\TrackableEntities.EF.6.xml
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\obj\Debug\TrackableClassLibrary.Entities.Service.Net45.csprojResolveAssemblyReference.cache
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\obj\Debug\TrackableClassLibrary.Entities.Service.Net45.dll
+F:\TestBed\Licensing\TrackableClassLibrary.Entities.Service.Net45\obj\Debug\TrackableClassLibrary.Entities.Service.Net45.pdb

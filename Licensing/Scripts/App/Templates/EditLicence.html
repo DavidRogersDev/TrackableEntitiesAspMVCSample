@@ -1,0 +1,79 @@
+﻿<div>
+    <h2>Edit Licence</h2>
+    
+    <form ng-submit="postLicenceFormSubmit()">
+        <div class="form-group">
+            <label class="control-label" for="Id">Licence Id:</label>
+            <input class="form-control" name="Id" type="text" ng-model="data.licence.id" />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="LicenceKey">Licence Key:</label>
+            <input class="form-control" name="LicenceKey" type="text" ng-model="data.licence.licenceKey" ng-change="flagModelAsChanged(data.licence.licenceKey)" />
+            <input class="form-control" name="TrackingState" type="hidden" ng-model="data.licence.trackingState" ng-value="data.licence.trackingState" />
+        </div>
+
+        <div ng-repeat="(i,allocation) in data.licence.licenceAllocations">
+            <label for="lic-[i]">{{allocation.person.firstName + ' ' + allocation.person.lastName}}</label>
+            
+            <select id="lic-[i]" kendo-drop-down-list style="width: 20%;" k-options="customOptions" k-ng-model="allocation.person" k-on-change="flagModelAsChangedKendo(allocation, kendoEvent)"></select>
+
+        </div>
+
+        <input type="submit" value="click" class="btn btn-default" />
+        
+
+            <!--<select kendo-drop-down-list style="width: 100%;">
+                <option>Albania</option>
+                <option>Andorra</option>
+                <option>Armenia</option>
+                <option>Austria</option>
+                <option>Azerbaijan</option>
+                <option>Belarus</option>
+                <option>Belgium</option>
+                <option>Bosnia & Herzegovina</option>
+                <option>Bulgaria</option>
+                <option>Croatia</option>
+                <option>Cyprus</option>
+                <option>Czech Republic</option>
+                <option>Denmark</option>
+                <option>Estonia</option>
+                <option>Finland</option>
+                <option>France</option>
+                <option>Georgia</option>
+                <option>Germany</option>
+                <option>Greece</option>
+                <option>Hungary</option>
+                <option>Iceland</option>
+                <option>Ireland</option>
+                <option>Italy</option>
+                <option>Kosovo</option>
+                <option>Latvia</option>
+                <option>Liechtenstein</option>
+                <option>Lithuania</option>
+                <option>Luxembourg</option>
+                <option>Macedonia</option>
+                <option>Malta</option>
+                <option>Moldova</option>
+                <option>Monaco</option>
+                <option>Montenegro</option>
+                <option>Netherlands</option>
+                <option>Norway</option>
+                <option>Poland</option>
+                <option>Portugal</option>
+                <option>Romania</option>
+                <option>Russia</option>
+                <option>San Marino</option>
+                <option>Serbia</option>
+                <option>Slovakia</option>
+                <option>Slovenia</option>
+                <option>Spain</option>
+                <option>Sweden</option>
+                <option>Switzerland</option>
+                <option>Turkey</option>
+                <option>Ukraine</option>
+                <option>United Kingdom</option>
+                <option>Vatican City</option>
+            </select>-->
+</form>
+
+</div>

@@ -1,5 +1,5 @@
 # Readme #
-Included in the base directory is a bak file for the database. It's very small. Licensing.bak
+There is a small bak file for the db - Licensing.bak - which can be [downloaded from here](https://app.box.com/s/f7ntxnhngc68okvm1oq1pq6ge3vwr9l9).
 
 The schema can be seen here - ![](http://www.codeproject.com/KB/dotnet/788559/LicencingSchema.PNG)
 

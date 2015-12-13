@@ -58,10 +58,9 @@ namespace Licensing.Controllers
         {
             var licence = licenseContext.Licences
                 .Include(l => l.LicenceAllocations.Select(la => la.Person))
-                .Single(l => l.Id == id.Value);
+                .SingleOrDefault(l => l.Id == id.Value) ?? new Licence();
 
             var people = licenseContext.People.ToArray();
-
 
             return NewtonJson(new { licence, people });
         }

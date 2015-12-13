@@ -1,10 +1,31 @@
 ﻿using System;
-using TrackableEntities.Client;
+using System.Net.Http;
+using System.Net.Http.Formatting;
+using TrackableClassLibrary.Entities.Client.Net45.Models;
 
 namespace TestHarness
 {
     class Program
     {
+        static void Main(string[] args)
+        {
+            const string serviceBaseAddress = "http://localhost:" + "8510" + "/";
+            var client = new HttpClient { BaseAddress = new Uri(serviceBaseAddress) };
+
+            // Get customers
+            Console.WriteLine("Press Enter to retrieve Licence:");
+            Console.ReadLine();
+            var id = 1; // Set id
+            string request = "Edit/GetLicenceById/" + id;
+            var content = new ObjectContent<Licence>(null, new JsonMediaTypeFormatter());
+            var response = client.PostAsync(new Uri(request, UriKind.Relative), content).Result;
+            response.EnsureSuccessStatusCode();
+            var license = response.Content.ReadAsAsync<Licence>().Result;
+            Console.WriteLine("LicenceKey: {0}", license.LicenceKey);
+        }
+
+        // Commenting out main, so that it can be refactored to invoke web api
+        /*
         static void Main(string[] args)
         {
             var licensingContext = new LicensingContext();
@@ -68,5 +89,6 @@ namespace TestHarness
 
             Console.ReadLine();
         }
+        */
     }
 }

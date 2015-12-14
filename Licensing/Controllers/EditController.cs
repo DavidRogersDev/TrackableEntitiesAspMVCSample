@@ -5,6 +5,7 @@ using System.Web.Mvc;
 using Licensing.Models;
 using TrackableClassLibrary.Entities.Service.Net45.Contexts;
 using TrackableClassLibrary.Entities.Service.Net45.Models;
+using TrackableEntities.Common;
 using TrackableEntities.EF6;
 
 namespace Licensing.Controllers
@@ -50,8 +51,10 @@ namespace Licensing.Controllers
             //}
 
             licenseContext.ApplyChanges(licence);
+            licenseContext.SaveChanges();
+            licence.AcceptChanges();
 
-            return null;
+            return GetLicenceById(licence.Id);
         }
 
         [HttpPost]

@@ -62,9 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contexts\LicensingInitializer.cs" />
     <Compile Include="Models\Licence.cs" />
     <Compile Include="Models\LicenceAllocation.cs" />
-    <Compile Include="Models\LicensingContext.cs" />
+    <Compile Include="Contexts\LicensingContext.cs" />
     <Compile Include="Models\Mapping\LicenceAllocationMap.cs" />
     <Compile Include="Models\Mapping\LicenceMap.cs" />
     <Compile Include="Models\Mapping\PersonMap.cs" />
@@ -89,9 +90,7 @@
     <Content Include="CodeTemplates\ReverseEngineerCodeFirst\Mapping.tt" />
     <Content Include="TrackableServiceEntities.ReadMe.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Contexts\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>

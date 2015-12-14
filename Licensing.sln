@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackableClassLibrary.Entit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackableClassLibrary.Entities.Client.Net45", "TrackableClassLibrary.Entities.Client.Net45\TrackableClassLibrary.Entities.Client.Net45.csproj", "{953B79E1-B6B4-4E15-B32D-AB6A28D2510E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestoreDatabaseHarness", "RestoreDatabaseHarness\RestoreDatabaseHarness.csproj", "{2CC9FE1B-C63B-44F5-828A-395C445A1E9A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{953B79E1-B6B4-4E15-B32D-AB6A28D2510E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{953B79E1-B6B4-4E15-B32D-AB6A28D2510E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{953B79E1-B6B4-4E15-B32D-AB6A28D2510E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2CC9FE1B-C63B-44F5-828A-395C445A1E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CC9FE1B-C63B-44F5-828A-395C445A1E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CC9FE1B-C63B-44F5-828A-395C445A1E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CC9FE1B-C63B-44F5-828A-395C445A1E9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,13 +1,15 @@
 using System.Data.Entity;
+using TrackableClassLibrary.Entities.Service.Net45.Models;
 using TrackableClassLibrary.Entities.Service.Net45.Models.Mapping;
 
-namespace TrackableClassLibrary.Entities.Service.Net45.Models
+namespace TrackableClassLibrary.Entities.Service.Net45.Contexts
 {
     public partial class LicensingContext : DbContext
     {
         static LicensingContext()
         {
-            Database.SetInitializer(new NullDatabaseInitializer<LicensingContext>());
+            // Create database if model changes and seed with data
+            Database.SetInitializer(new LicensingInitializer());
         }
 
         public LicensingContext()

@@ -62,7 +62,5 @@ C:\Git\TrackableEntitiesAspMVCSample\TestHarness\bin\Debug\Antlr3.Runtime.pdb
 C:\Git\TrackableEntitiesAspMVCSample\TestHarness\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Git\TrackableEntitiesAspMVCSample\TestHarness\obj\Debug\TestHarness.exe
 C:\Git\TrackableEntitiesAspMVCSample\TestHarness\obj\Debug\TestHarness.pdb
-C:\Git\TrackableEntitiesAspMVCSample\TestHarness\bin\Debug\AspnetWebApi2Helpers.Serialization.dll
 C:\Git\TrackableEntitiesAspMVCSample\TestHarness\bin\Debug\System.Net.Http.Formatting.dll
-C:\Git\TrackableEntitiesAspMVCSample\TestHarness\bin\Debug\AspnetWebApi2Helpers.Serialization.xml
 C:\Git\TrackableEntitiesAspMVCSample\TestHarness\bin\Debug\System.Net.Http.Formatting.xml

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 using Licensing.Models;
-using TrackableClassLibrary.Entities.Service.Net45.Models;
+using TrackableClassLibrary.Entities.Service.Net45.Contexts;
 
 namespace Licensing.Controllers
 {

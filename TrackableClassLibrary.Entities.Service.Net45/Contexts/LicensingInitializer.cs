@@ -28,6 +28,12 @@ namespace TrackableClassLibrary.Entities.Service.Net45.Contexts
                 FirstName = "Susan",
                 LastName = "Jones"
             });
+            context.People.Add(new Person
+            {
+                Id = 3,
+                FirstName = "Jerry",
+                LastName = "Boags"
+            });
         }
 
         private void AddSoftware(LicensingContext context)

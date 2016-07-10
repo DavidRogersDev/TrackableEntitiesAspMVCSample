@@ -42,13 +42,6 @@ namespace Licensing.Controllers
         [HttpPost]
         public ActionResult EditLicence([ModelBinder(typeof(BetterDefaultModelBinder))]Licence licence)
         {
-            //licence.Software = licenseContext.Softwares.Single(software => software.Id == licence.SoftwareId);
-
-            //for (int index = 0; index < licence.LicenceAllocations.Count; index++)
-            //{
-            //    var licenceAllocation = licence.LicenceAllocations[index];
-            //    licenceAllocation.Licence = licence;
-            //}
 
             licenseContext.ApplyChanges(licence);
             licenseContext.SaveChanges();

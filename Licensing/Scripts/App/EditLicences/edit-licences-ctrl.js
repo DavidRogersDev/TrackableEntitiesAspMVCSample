@@ -1,7 +1,14 @@
-﻿(function() {
+﻿var trackingState = {
+    Unchanged: 0,
+    Added: 1,
+    Modified: 2,
+    Deleted: 3
+};
+
+(function () {
     'use strict';
 
-    angular.module('licensing').controller('editLicencesCtrl', function($scope, $http, $httpParamSerializer) {
+    angular.module('licensing').controller('editLicencesCtrl', function($scope, $http) {
 
 
         $http.post('/Edit/GetLicenceById/1')
@@ -29,35 +36,23 @@
         
         $scope.postLicenceFormSubmit = function() {
 
-            //var encoder = formEncode();
-            //var data = encoder(JSON.stringify($('form')));
-
-            //$http.post('/Edit/EditLicence')
-            //    .success(function (data) {
-            //        $scope.data = data;
-            //    });
-
             $http({
                 method: 'POST',
                 url: '/Edit/EditLicence',
-                //headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                //data: JSON.parse()
                 data: $scope.data
-                //data: $httpParamSerializer($scope.data)
             }).success(function(data) {
                 $scope.data = data;
             });
         };
 
         $scope.flagModelAsChanged = function(model) {
-            model.TrackingState = 2;
+            model.trackingState = trackingState.Modified;
         };
 
         $scope.flagModelAsChangedKendo = function (allocation, kendoEvent) {
             
-            allocation.trackingState = 2;
+            allocation.trackingState = trackingState.Modified;
             allocation.personId = allocation.person.id;
-            //$scope.$apply();
         };
     });
 })();
